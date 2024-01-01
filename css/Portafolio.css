@@ -1,0 +1,336 @@
+/*Gama de Colores https://imagecolorpicker.com/en */
+
+/* Definir selectores o variables en CSS */
+
+
+:root{
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #076aff;
+  --segundario:#073596;
+  --gris: #9c9c9c;
+  --grisClaro: #DFE9F3;
+}
+
+h1{
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+nav{
+  padding: 0% 20px;
+  background-color: var(--segundario);
+}
+
+.navegacion-principal{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.navegacion-principal a{
+  text-align: center;
+  text-decoration: none;
+  color:var(--blanco);
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0px 20px;
+  font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
+}
+
+.hero {
+  background-image: url(/img/5166293.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 560px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contenido-hero {
+  position:absolute;
+  background-color:#0c54ef5b;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor h2{
+  text-align: center;
+  color: var(--blanco);
+  font-size: 1.5rem;
+}
+
+.contenedor a{
+  display: grid;
+  place-self: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contenedor p{
+  color: var(--blanco);
+  font-size: 1.5rem;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.boton{
+  margin-top: 3rem;
+  color: var(--blanco);
+  text-decoration: none;
+  background-color: var(--segundario);
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+  width: 90%;
+  justify-content: center;
+}
+
+.boton:hover{
+  cursor:pointer;
+  background-color: var(--primario);
+  color:var(--oscuro)
+}
+
+.direccion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-container {
+  margin: 1rem 3rem;
+}
+
+.sombra{
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.Servicio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Servicios {
+  margin: 5%;
+}
+
+.Servicio h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Servicio h3, p{
+  display: flex;
+  justify-content:space-around;
+  line-height: 2;
+  margin: 1rem;
+}
+
+.icono {
+  background-color: var(--segundario);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+/* Main */
+.forms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formulario {
+  background-color: var(--gris);
+  width: 100%;
+  padding: 1.5rem, 0.5rem;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.formulario fieldset{
+  border: none;
+}
+
+.formulario legend{
+  text-align: center;
+  font-size: 130%;
+  color: var(--primario);
+  text-transform: uppercase;
+  font-size: 700;
+}
+
+.campos-container-1{
+  justify-content: center;
+  text-align: center;
+}
+
+.campos-container-2{
+  justify-content: center;
+  text-align: center;
+}
+
+.campo-1 label{
+  color: var(--blanco);
+  font-weight: bold;
+  display: block;
+  margin: 3%;
+}
+
+.campo-1-2 label{
+  color: var(--blanco);
+  font-weight: bold;
+  display: block;
+  margin: 3%;
+}
+
+.campo-2 label{
+  color: var(--blanco);
+  font-weight: bold;
+  display: block;
+  margin: 3%;
+}
+
+.campo-1 input{
+  border: none;
+  border-radius: 0.3rem;
+  padding:  3px 30px;
+}
+
+.campo-1-2 input{
+  border: none;
+  border-radius: 0.3rem;
+  padding:  3px 30px;
+}
+
+.campo-2 input{
+  border: none;
+  border-radius: 0.3rem;
+  padding:  3px 30px;
+}
+
+.campo-2 textarea {
+  border-radius: 0.3rem;
+  border: none;
+  width: 91%;
+  height: 8rem;
+  margin: 0.5rem;
+}
+
+footer{
+  text-align: center;
+  margin: 1.5rem ;
+}
+
+  @media (min-width:768px) {
+    .Servicios {
+      display: flex;
+      justify-content: center;
+    }  
+
+    .boton {
+      width: auto;
+    }
+
+    .navegacion-principal{
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    /* Main */
+
+    .forms-container{
+      display: grid;
+      justify-content: center;
+    }
+
+    .formulario{
+      width: 45rem;
+      display: grid;
+      justify-content: center;
+    }
+
+    .formulario legend{
+      font-size: 1.5rem;
+    }
+
+    .campos-container-1{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 1rem;
+    }
+
+    .campo-1 input{
+      padding: 1rem 4.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+    }
+
+    .campo-1-2 input{
+      padding: 1rem 4.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+    }
+
+    .campo-2 input{
+      padding: 1rem 4.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+      width: 75%;
+    }
+
+    .campo-2 textarea{
+      height: 20rem;
+      width: 96%;
+    }
+
+    .campo-2 label {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .campo-1 label {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .campo-1-2 label{
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    #boton{
+      width: auto;
+    }
+    .flex{
+      display:flex;
+    }
+    .derecha{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+  }
